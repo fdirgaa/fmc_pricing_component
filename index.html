@@ -42,10 +42,16 @@
         <div class="pageviews__slider">
           <input type="range" class="slider" min="1" max="200" value="100" />
         </div>
-        <div class="pageviews__price">$<span class="price"></span> /month</div>
+        <div class="pageviews__price">
+          <span class="price"></span><span>/ month</span>
+        </div>
         <div class="pageviews__subscription">
-          Monthly Billing <input type="checkbox" /> Yearly Billing
-          <span class="pageviews__discount">25% <span>discount</span></span>
+          Monthly Billing
+          <label class="switch">
+            <input type="checkbox" checked /><span class="switcher"></span>
+          </label>
+          Yearly Billing
+          <span class="pageviews__discount">-25% <span>discount</span></span>
         </div>
       </div>
       <div class="feature">
