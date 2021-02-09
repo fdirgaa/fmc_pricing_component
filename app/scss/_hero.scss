@@ -33,12 +33,20 @@
       margin-bottom: 0.75rem;
       color: $darkDesaturatedBlue;
       font-size: 1.3125rem;
+
+      @include breakpoint-up(medium) {
+        font-size: 1.875rem;
+      }
     }
 
     p {
       margin: 0;
       color: $grayishBlue;
       font-size: 0.875rem;
+
+      @include breakpoint-up(medium) {
+        font-size: 1rem;
+      }
     }
   }
 }
