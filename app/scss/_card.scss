@@ -57,15 +57,7 @@
         border-radius: 0.25rem;
         outline: none;
 
-        &::-ms-fill-lower {
-          background-color: hsl(174, 77%, 80%);
-          border-radius: 50px;
-          height: 8px;
-          outline: none;
-        }
-
         &::-webkit-slider-thumb {
-          // overflow: hidden;
           -webkit-appearance: none;
           appearance: none;
           width: 2.5rem;
@@ -76,7 +68,7 @@
           background-color: $strongCyan;
           cursor: pointer;
           box-shadow: 0px 10px 20px rgba($color: $softCyan, $alpha: 1);
-          // box-shadow: -100vw 0 0 100vw #000;
+          transition: all 150ms ease-in-out;
         }
 
         &::-moz-range-thumb {
@@ -88,6 +80,7 @@
           background-color: $strongCyan;
           cursor: pointer;
           box-shadow: 0px 10px 20px rgba($color: $softCyan, $alpha: 1);
+          transition: all 150ms ease-in-out;
         }
 
         &::-moz-range-progress {

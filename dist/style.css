@@ -202,13 +202,6 @@ h1 {
   outline: none;
 }
 
-.card .pageviews__slider .slider::-ms-fill-lower {
-  background-color: #a5f3eb;
-  border-radius: 50px;
-  height: 8px;
-  outline: none;
-}
-
 .card .pageviews__slider .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -221,6 +214,8 @@ h1 {
   cursor: pointer;
   -webkit-box-shadow: 0px 10px 20px #a5f3eb;
           box-shadow: 0px 10px 20px #a5f3eb;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 
 .card .pageviews__slider .slider::-moz-range-thumb {
@@ -232,6 +227,8 @@ h1 {
   background-color: #10d5c2;
   cursor: pointer;
   box-shadow: 0px 10px 20px #a5f3eb;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 
 .card .pageviews__slider .slider::-moz-range-progress {
