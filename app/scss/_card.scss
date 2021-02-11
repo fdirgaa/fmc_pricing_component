@@ -1,6 +1,6 @@
 .card {
   width: 20.4375rem;
-  margin: 0 auto 6.25rem;
+  margin: 0 auto;
 
   background-color: $white;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
@@ -57,6 +57,13 @@
         border-radius: 0.25rem;
         outline: none;
 
+        &::-ms-fill-lower {
+          background-color: hsl(174, 77%, 80%);
+          border-radius: 50px;
+          height: 8px;
+          outline: none;
+        }
+
         &::-webkit-slider-thumb {
           // overflow: hidden;
           -webkit-appearance: none;
@@ -87,6 +94,36 @@
           height: 0.5rem;
           background: $softCyan;
           border-radius: 0.25rem;
+        }
+
+        &:hover {
+          &::-webkit-slider-thumb {
+            background-color: hsl(173, 70%, 70%);
+            cursor: grab;
+          }
+          &::-moz-range-thumb {
+            background-color: hsl(173, 70%, 70%);
+            cursor: grab;
+          }
+          &::-ms-thumb {
+            background-color: hsl(173, 70%, 70%);
+            cursor: grab;
+          }
+        }
+
+        &:active {
+          &::-webkit-slider-thumb {
+            background-color: hsl(173, 70%, 70%);
+            cursor: grabbing;
+          }
+          &::-moz-range-thumb {
+            background-color: hsl(173, 70%, 70%);
+            cursor: grabbing;
+          }
+          &::-ms-thumb {
+            background-color: hsl(173, 70%, 70%);
+            cursor: grabbing;
+          }
         }
       }
     }
